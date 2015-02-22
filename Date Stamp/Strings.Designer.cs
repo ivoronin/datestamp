@@ -61,6 +61,42 @@ namespace Date_Stamp {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DateStampFormat.
+        /// </summary>
+        internal static string DateStampFormatKey {
+            get {
+                return ResourceManager.GetString("DateStampFormatKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _ddMMyy.
+        /// </summary>
+        internal static string DefaultDateStampFormat {
+            get {
+                return ResourceManager.GetString("DefaultDateStampFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (?=\.[^.\\]+$).
+        /// </summary>
+        internal static string DefaultFileNameRegex {
+            get {
+                return ResourceManager.GetString("DefaultFileNameRegex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FileNameRegex.
+        /// </summary>
+        internal static string FileNameRegexKey {
+            get {
+                return ResourceManager.GetString("FileNameRegexKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
         internal static string Help {

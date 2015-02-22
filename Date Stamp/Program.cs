@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Date_Stamp
 {
     static class Program
@@ -14,17 +13,12 @@ namespace Date_Stamp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (args.Length == 0)
-                DateStamp.install();
-            else
-            {
-                if (args.Length == 1 && args[0] == "/install")
-                    DateStamp.install();
-                if (args.Length == 1 && args[0] == "/uninstall")
-                    DateStamp.uninstall();
-                if (args.Length == 2 && args[0] == "/copy")
-                    DateStamp.copy(args[1]);
-            }
+            if (args.Length == 1 && args[0] == "/install")
+                DateStamp.Install();
+            if (args.Length == 1 && args[0] == "/uninstall")
+                DateStamp.Uninstall();
+            if (args.Length == 2 && args[0] == "/copy")
+                DateStamp.Copy(args[1]);
         }
     }
 }
