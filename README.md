@@ -10,13 +10,13 @@ Microsoft Visual Studio 2013 for Windows Desktop
 ## Installation
 Copy *Date Stamp.exe* and *Date Stamp.exe.config* to a directory of your choice, then run:
 ```
-Date Stamp.exe /install
+"Date Stamp.exe" /install
 ```
 
 ## Uninstallation
 Run:
 ```
-Date Stamp.exe /uninstall
+"Date Stamp.exe" /uninstall
 ```
 then delete *Date Stamp.exe* and *Date Stamp.exe.config*
 
