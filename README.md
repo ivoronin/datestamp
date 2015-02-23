@@ -23,5 +23,5 @@ then delete *Date Stamp.exe* and *Date Stamp.exe.config*
 ## Configuration
 Date Stamp settings are in the following registry path: *HKEY_CURRENT_USER\Software\Date Stamp*
 
-- DateStampFormat - Date stamp format string, see https://msdn.microsoft.com/en-us/library/8kb3ddd4%28v=vs.110%29.aspx
-- FileNameRegex - Regular expression specifying the location to place the date stamp
+- DateStampFormat - Date stamp format string (see https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx). Default is "_ddMMyy".
+- FileNameRegex - Regular expression specifying the location to place the date stamp. Default is "(?=\.[^.\\]+$)" (matches a position preceding a filename extension).
